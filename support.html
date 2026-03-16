@@ -25,7 +25,7 @@
             letter-spacing: -0.02em;
             margin-bottom: 1rem;
         }
-        .support-content p {
+        .support-content > p {
             font-size: 1.125rem;
             color: var(--color-text-secondary);
             line-height: 1.7;
@@ -45,6 +45,8 @@
         }
         .support-card p {
             font-size: 1rem;
+            color: var(--color-text-secondary);
+            line-height: 1.6;
             margin-bottom: 0.75rem;
         }
         .support-card a {
@@ -54,23 +56,52 @@
         .support-card a:hover {
             text-decoration: underline;
         }
+        .faq-section {
+            margin-top: 3rem;
+        }
+        .faq-section h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 1.5rem;
+        }
+        .faq-item {
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: 1rem;
+            padding: 1.5rem 2rem;
+            margin-bottom: 1rem;
+        }
+        .faq-item h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--color-text-primary);
+        }
+        .faq-item p {
+            font-size: 0.9375rem;
+            color: var(--color-text-secondary);
+            line-height: 1.6;
+            margin: 0;
+        }
     </style>
 </head>
 
 <body>
-    <!-- Header -->
-    <header class="header scrolled" id="header">
-        <div class="container header-container">
-            <a href="index.html" class="logo">MACROSGPT</a>
-            <nav class="nav">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="/#features" class="nav-link">Features</a>
-                <a href="/#faq" class="nav-link">FAQ</a>
-            </nav>
-            <a href="https://apps.apple.com/app/id6756399923" class="btn btn-primary btn-sm" target="_blank"
-                rel="noopener">Download Free</a>
+    <nav class="nav-pill" id="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">
+                <img src="assets/icon.png" alt="" class="nav-icon">
+                MACROSGPT
+            </a>
+            <div class="nav-links">
+                <a href="index.html#features" class="nav-link">Features</a>
+                <a href="support.html" class="nav-link">Support</a>
+            </div>
+            <a href="https://apps.apple.com/app/id6756399923" class="nav-cta" target="_blank"
+                rel="noopener">Download</a>
         </div>
-    </header>
+    </nav>
 
     <main class="support-page">
         <div class="container support-content">
@@ -90,14 +121,47 @@
             </div>
 
             <div class="support-card">
-                <h3>FAQ</h3>
-                <p>Many common questions are answered on our home page.</p>
-                <a href="/#faq">View Frequently Asked Questions</a>
-            </div>
-
-            <div class="support-card">
                 <h3>Response Time</h3>
                 <p>We typically respond within 24 hours. For faster help, include your account email and a description of the issue.</p>
+            </div>
+
+            <div class="faq-section">
+                <h2>Frequently Asked Questions</h2>
+
+                <div class="faq-item">
+                    <h3>How does food logging work?</h3>
+                    <p>Just type what you ate in plain language (e.g. "chicken salad for lunch") or snap a photo of your plate. Mac, your AI coach, breaks down the macros instantly — no barcode scanning or database searching required.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How much does MacrosGPT cost?</h3>
+                    <p>MacrosGPT is $4.99/month with a 7-day free trial. You can cancel anytime through your Apple subscription settings. Basic features like workout tracking and grocery lists are available without a subscription.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How do I cancel my subscription?</h3>
+                    <p>Open the Settings app on your iPhone, tap your name at the top, then Subscriptions. Find MacrosGPT and tap Cancel. You can also use the link above under "Manage Your Subscription."</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Is my data private?</h3>
+                    <p>Yes. Your nutrition and health data stays in your account and is never sold or shared with third parties. See our <a href="privacy.html">Privacy Policy</a> for details.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Does it sync with Apple Health?</h3>
+                    <p>Yes. MacrosGPT syncs with Apple Health to pull in workouts, steps, and activity data automatically — so you get both sides of the equation in one app.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What languages are supported?</h3>
+                    <p>MacrosGPT is available in 22 languages including English, Spanish, French, German, Japanese, Korean, Arabic, and more. Mac can understand food descriptions in your language.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Can I get a refund?</h3>
+                    <p>Refunds are handled by Apple. You can request one at <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a> or contact us and we'll help guide you through the process.</p>
+                </div>
             </div>
         </div>
     </main>

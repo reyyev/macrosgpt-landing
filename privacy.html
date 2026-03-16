@@ -15,62 +15,178 @@
         .legal-content h1 { font-size: 2.25rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 0.5rem; }
         .legal-content .updated { font-size: 0.875rem; color: var(--color-text-tertiary); margin-bottom: 2rem; }
         .legal-content h2 { font-size: 1.25rem; font-weight: 600; margin-top: 2rem; margin-bottom: 0.75rem; }
+        .legal-content h3 { font-size: 1.0625rem; font-weight: 600; margin-top: 1.25rem; margin-bottom: 0.5rem; color: var(--color-text-primary); }
         .legal-content p, .legal-content li { font-size: 1rem; color: var(--color-text-secondary); line-height: 1.7; margin-bottom: 1rem; }
         .legal-content ul { padding-left: 1.5rem; list-style: disc; }
         .legal-content a { color: var(--color-accent); }
+        .legal-content strong { color: var(--color-text-primary); }
     </style>
 </head>
 
 <body>
-    <header class="header scrolled">
-        <div class="container header-container">
-            <a href="index.html" class="logo">MACROSGPT</a>
-            <nav class="nav">
-                <a href="index.html" class="nav-link">Home</a>
+    <nav class="nav-pill" id="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">
+                <img src="assets/icon.png" alt="" class="nav-icon">
+                MACROSGPT
+            </a>
+            <div class="nav-links">
+                <a href="index.html#features" class="nav-link">Features</a>
                 <a href="support.html" class="nav-link">Support</a>
-            </nav>
+            </div>
+            <a href="https://apps.apple.com/app/id6756399923" class="nav-cta" target="_blank"
+                rel="noopener">Download</a>
         </div>
-    </header>
+    </nav>
 
     <main class="legal-page">
         <div class="container legal-content">
             <h1>Privacy Policy</h1>
-            <p class="updated">Last updated: March 16, 2026</p>
+            <p class="updated">Last updated: March 5, 2026</p>
 
-            <p>MacrosGPT ("we", "us", or "our") operates the MacrosGPT mobile application. This page informs you of our policies regarding the collection, use, and disclosure of personal data.</p>
+            <p><strong>App Name:</strong> MacrosGPT<br>
+            <strong>Developer:</strong> Hope Labs<br>
+            <strong>Contact Email:</strong> <a href="mailto:andreyadmitri@gmail.com">andreyadmitri@gmail.com</a></p>
 
-            <h2>Information We Collect</h2>
+            <h2>1. Introduction</h2>
+            <p>MacrosGPT provides an AI-powered calorie and nutrition tracking application. This policy explains our data collection, use, storage, and protection practices.</p>
+            <p>By creating an account, you agree to data collection as described in this policy, including use for training and improving AI models.</p>
+            <p>This policy is designed to comply with App Store Requirements, CCPA, CPRA, GDPR, and global privacy standards.</p>
+
+            <h2>2. Information We Collect</h2>
+
+            <h3>Account Information</h3>
             <ul>
-                <li><strong>Account data:</strong> Email address and display name when you create an account.</li>
-                <li><strong>Health & nutrition data:</strong> Food logs, macro targets, weight entries, and workout data you provide to the app.</li>
-                <li><strong>Photos:</strong> Food photos you send are processed by AI to estimate nutrition. Photos are not stored permanently on our servers.</li>
-                <li><strong>Usage data:</strong> Anonymous analytics to improve the app experience.</li>
+                <li>Name, email, authentication token, profile photo</li>
             </ul>
 
-            <h2>How We Use Your Data</h2>
-            <p>Your data is used exclusively to provide personalized nutrition coaching, track your progress, and improve the app. We do not sell your personal data to third parties.</p>
-
-            <h2>Data Storage & Security</h2>
-            <p>Your data is stored securely using Google Firebase with encryption at rest and in transit. We follow industry-standard security practices to protect your information.</p>
-
-            <h2>Third-Party Services</h2>
+            <h3>Health & Fitness Data</h3>
             <ul>
-                <li><strong>Firebase (Google):</strong> Authentication, database, and cloud functions.</li>
-                <li><strong>Google Gemini AI:</strong> Processes chat messages and food photos for nutrition estimation.</li>
-                <li><strong>RevenueCat:</strong> Subscription management and billing.</li>
+                <li>Age, weight, height, activity level, goal weight</li>
+                <li>Nutrition logs, exercise logs, progress data</li>
             </ul>
 
-            <h2>Your Rights</h2>
-            <p>You may request deletion of your account and all associated data at any time by emailing <a href="mailto:support@macrosgpt.app">support@macrosgpt.app</a>.</p>
+            <h3>Camera & Photos</h3>
+            <ul>
+                <li>Food photos are stored temporarily and deleted after 24 hours</li>
+            </ul>
 
-            <h2>Children's Privacy</h2>
-            <p>MacrosGPT is not intended for children under 13. We do not knowingly collect data from children.</p>
+            <h3>AI Chat Logs</h3>
+            <ul>
+                <li>Stored locally and deleted after 90 days</li>
+                <li>High-level insights may be cloud-stored</li>
+            </ul>
 
-            <h2>Changes to This Policy</h2>
-            <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated revision date.</p>
+            <h3>Automatically Collected Data</h3>
+            <ul>
+                <li>Device type, usage events, crash logs, anonymous analytics</li>
+            </ul>
 
-            <h2>Contact</h2>
-            <p>Questions? Email us at <a href="mailto:support@macrosgpt.app">support@macrosgpt.app</a>.</p>
+            <h3>Sensitive Data</h3>
+            <p>We do not collect biometric identifiers, government IDs, or financial information.</p>
+
+            <h2>3. How We Use Your Information</h2>
+            <p>Your information is used for:</p>
+            <ul>
+                <li>App functionality and personalization</li>
+                <li>AI improvement</li>
+                <li>Subscription management</li>
+                <li>Internal analytics</li>
+                <li>Customer support</li>
+                <li>Future marketing (with opt-out options)</li>
+            </ul>
+
+            <h2>4. AI Model Transparency</h2>
+            <p>MacrosGPT is an independent product and is not affiliated with OpenAI or ChatGPT. AI assists with calorie estimation, food identification, insights, progress analysis, and coaching.</p>
+
+            <h3>Data Access</h3>
+            <p>The AI may access your age, weight, activity level, nutrition logs, exercise data, food photos, chat logs, and usage patterns to provide personalized coaching.</p>
+
+            <h3>AI Training</h3>
+            <p>By using MacrosGPT, you agree your data may be used to train AI models. Training data is anonymized, aggregated, and stripped of personal identifiers when possible.</p>
+
+            <h3>Processing Locations</h3>
+            <p>Data may be processed on cloud servers, Firebase infrastructure, or on-device.</p>
+
+            <h3>Limitations</h3>
+            <p>AI may misidentify foods, miscalculate calories, generate inaccurate advice, or hallucinate information. It does not provide medical advice.</p>
+
+            <h3>Opt-Out</h3>
+            <p>Opting out of AI data processing is not possible due to AI's core functionality role in the app.</p>
+
+            <h2>5. Data Sharing & Third Parties</h2>
+            <p>Your data is never sold. Sharing occurs only with necessary service providers:</p>
+            <ul>
+                <li><strong>Firebase (Google Cloud):</strong> Authentication, database, and cloud functions</li>
+                <li><strong>App Store Billing:</strong> Apple App Store and Google Play billing systems</li>
+            </ul>
+            <p>No Google Analytics or Meta Analytics are used.</p>
+            <p>Legal disclosures may occur per law enforcement or court orders.</p>
+
+            <h2>6. Data Storage & Retention</h2>
+            <ul>
+                <li><strong>Cloud storage via Firebase:</strong> Retained until account deletion</li>
+                <li><strong>Photos:</strong> Deleted after 24 hours</li>
+                <li><strong>Chat logs:</strong> Deleted after 90 days</li>
+                <li><strong>Account data:</strong> Deleted entirely upon account deletion, with backups removed within 30 days</li>
+            </ul>
+
+            <h2>7. Data Security</h2>
+            <p>We use industry-standard security practices including:</p>
+            <ul>
+                <li>End-to-end encryption</li>
+                <li>HTTPS</li>
+                <li>Firebase security rules</li>
+                <li>Access logging</li>
+                <li>Role-based permissions</li>
+            </ul>
+            <p>No method of electronic storage or transmission is 100% secure.</p>
+
+            <h2>8. International Data Transfers</h2>
+            <p>Data is stored in the United States or European Union. EU transfers follow Standard Contractual Clauses and GDPR protections.</p>
+
+            <h2>9. Your Privacy Rights</h2>
+
+            <h3>GDPR (EU)</h3>
+            <p>If you are in the EU, you have the right to:</p>
+            <ul>
+                <li>Access your data</li>
+                <li>Correct inaccurate data</li>
+                <li>Request deletion</li>
+                <li>Restrict processing</li>
+                <li>Data portability</li>
+                <li>File complaints with a supervisory authority</li>
+            </ul>
+
+            <h3>CCPA (California)</h3>
+            <p>If you are a California resident, you have the right to:</p>
+            <ul>
+                <li>Know what data is collected</li>
+                <li>Request deletion of your data</li>
+                <li>Correct inaccurate data</li>
+                <li>Opt-out of data sales (not applicable — we do not sell data)</li>
+                <li>Non-discrimination for exercising your rights</li>
+            </ul>
+
+            <h2>10. Children's Privacy</h2>
+            <p>MacrosGPT is intended for ages 13 and older. We do not knowingly collect data from children under 13. If we discover data from a child under 13, it will be deleted immediately.</p>
+
+            <h2>11. Account Deletion</h2>
+            <p>You may delete your account via the app or by emailing us. Upon deletion:</p>
+            <ul>
+                <li>Cloud data is erased</li>
+                <li>Backups are removed within 30 days</li>
+                <li>Previously used AI training data is excluded prospectively</li>
+                <li>Photos and logs are auto-deleted per retention schedule</li>
+            </ul>
+
+            <h2>12. Changes to This Policy</h2>
+            <p>We may update this Privacy Policy periodically. Changes will be communicated via email or in-app notice.</p>
+
+            <h2>13. Contact Information</h2>
+            <p>For questions regarding this policy, contact:</p>
+            <p><strong>Email:</strong> <a href="mailto:andreyadmitri@gmail.com">andreyadmitri@gmail.com</a><br>
+            <strong>Developer:</strong> Hope Labs</p>
         </div>
     </main>
 
